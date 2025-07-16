@@ -1,0 +1,31 @@
+/* theme.css */
+:root {
+    --color-bg: #000;
+    --color-accent: #00ff90;
+    --color-shadow: #0f0;
+    --font-main: 'Share Tech Mono', monospace;
+  }
+  
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-accent);
+    font-family: var(--font-main);
+  }
+  
+  .text-shadow {
+    text-shadow: 0 0 10px var(--color-accent);
+  }
+  
+  .border-accent {
+    border-color: var(--color-accent);
+  }
+  
+  .hover-fill {
+    transition: 0.3s;
+  }
+  
+  .hover-fill:hover {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+  }
+  

@@ -1,0 +1,73 @@
+/* components.css */
+nav {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  nav a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #00ff90;
+    text-decoration: none;
+    color: #00ff90;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #00ff90;
+    color: #000;
+  }
+  
+  .breadcrumb {
+    margin-bottom: 30px;
+  }
+  
+  .breadcrumb a {
+    color: #00ff90;
+    text-decoration: none;
+    border-bottom: 1px dashed #00ff90;
+  }
+  
+  .topic, .tips {
+    margin-bottom: 40px;
+  }
+  
+  .topic h2, .tips h2 {
+    border-left: 4px solid #00ff90;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+  }
+  
+  .duck-zone {
+    text-align: center;
+    margin: 60px 20px;
+  }
+  
+  .duck-zone img {
+    width: 100px;
+    filter: drop-shadow(0 0 10px #00ff90);
+  }
+  
+  .certs {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .certs h3 {
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #00ff90;
+  }
+  
+  .certs .badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .certs .badges img {
+    width: 120px;
+    height: auto;
+  }

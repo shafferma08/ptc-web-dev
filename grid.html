@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Study Guide</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <h1>🧱 CSS Grid</h1>
+    <p class="subtitle">Master two-dimensional layouts like a pro.</p>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="../study-guides.html">← Back to Study Guides</a>
+  </nav>
+
+  <main class="content">
+    <section class="topic">
+      <h2>📘 What is CSS Grid?</h2>
+      <p>CSS Grid is a layout system designed for two-dimensional layouts (both rows and columns). It allows you to create complex responsive web designs more easily than older layout techniques like floats or even Flexbox.</p>
+    </section>
+
+    <section class="topic">
+      <h2>✨ Why Use CSS Grid?</h2>
+      <ul>
+        <li>Ideal for building full page or section-based layouts</li>
+        <li>Handles both columns and rows</li>
+        <li>Reduces the need for deeply nested HTML</li>
+        <li>Pairs well with Flexbox (use Flex for components, Grid for layout)</li>
+      </ul>
+    </section>
+
+    <section class="topic">
+      <h2>🔤 Basic Syntax</h2>
+      <pre><code>/* Container */
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}</code></pre>
+      <p><code>1fr</code> means “one fraction” of the available space.</p>
+    </section>
+
+    <section class="topic">
+      <h2>🧩 Example: 2x2 Grid</h2>
+      <pre><code>&lt;div class="grid-2x2"&gt;
+  &lt;div&gt;1&lt;/div&gt;
+  &lt;div&gt;2&lt;/div&gt;
+  &lt;div&gt;3&lt;/div&gt;
+  &lt;div&gt;4&lt;/div&gt;
+&lt;/div&gt;
+
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}</code></pre>
+    </section>
+
+    <section class="topic">
+      <h2>↔️ Spanning Columns and Rows</h2>
+      <pre><code>.item {
+  grid-column: span 2;
+  grid-row: span 2;
+}</code></pre>
+    </section>
+
+    <section class="topic">
+      <h2>🗺️ Grid Template Areas</h2>
+      <pre><code>.layout {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+}</code></pre>
+    </section>
+
+    <section class="topic">
+      <h2>📱 Responsive Grid</h2>
+      <pre><code>.responsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}</code></pre>
+      <p>This automatically adjusts the number of columns based on available space. Super handy for galleries or card layouts!</p>
+    </section>
+
+    <section class="topic">
+      <h2>🎨 Live Demo: Grid Image Gallery</h2>
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="LEYMMKG" data-pen-title="Grid Image Gallery" data-user="shafferma08" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shafferma08/pen/LEYMMKG">Grid Image Gallery</a> by Marianne Shaffer (<a href="https://codepen.io/shafferma08">@shafferma08</a>) on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+
+      <h3>🧠 Challenge Prompt</h3>
+      <ul>
+        <li>🟢 Beginner: Change the number of columns from 3 to 2</li>
+        <li>🟡 Intermediate: Add hover effects to the images</li>
+        <li>🔴 Advanced: Make the layout responsive with <code>auto-fit</code></li>
+      </ul>
+    </section>
+
+    <section class="topic">
+      <h2>🔗 Reputable Resources</h2>
+      <ul>
+        <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">CSS-Tricks Complete Guide to Grid</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout" target="_blank">MDN: CSS Grid Layout</a></li>
+        <li><a href="https://grid.layoutit.com/" target="_blank">LayoutIt Grid Generator</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>🚀 Built with Grid Power | Web Dev @ PTC</p>
+  </footer>
+
+  <script async src="https://public.codepenassets.com/embed/index.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
