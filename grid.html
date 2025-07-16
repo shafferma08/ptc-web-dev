@@ -34,6 +34,27 @@
     </section>
 
     <section class="topic">
+      <h2>🧠 Before You Code: Plan Your Grid Layout</h2>
+      <p style="color: #66ccff;">
+        Grid is incredibly powerful, but without a plan, it's easy to get lost. Take time to sketch your layout and ask yourself:
+        <ul>
+          <li>How many columns and rows will I need?</li>
+          <li>Do any items need to span multiple columns or rows?</li>
+          <li>Am I using <code>grid-template-areas</code> or explicit line-based placement?</li>
+        </ul>
+        Grid starts with the parent container using <code>display: grid</code>. All column, row, and area settings are applied from there.
+      </p>
+    
+      <h3>🪤 Common Grid Mistakes</h3>
+      <ul style="color: #ff9999;">
+        <li>🟥 Using <code>grid-column</code> or <code>grid-row</code> on the container instead of children</li>
+        <li>🟥 Forgetting to define both <code>grid-template-columns</code> and <code>grid-template-rows</code></li>
+        <li>🟥 Misaligning <code>grid-template-areas</code> with your HTML</li>
+        <li>🟥 Not using <code>auto-fit</code> or <code>minmax</code> for responsiveness</li>
+      </ul>
+    </section>    
+
+    <section class="topic">
       <h2>🔤 Basic Syntax</h2>
       <pre><code>/* Container */
 .parent {

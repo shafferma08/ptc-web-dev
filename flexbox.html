@@ -34,13 +34,34 @@
     </section>
 
     <section class="topic">
+        <h2>🧠 Before You Code: Plan Your Flexbox Layout</h2>
+        <p style="color: #66ccff;">
+            Flexbox is perfect for laying items out in a single direction — row or column. But first, take a moment to plan:
+            <ul>
+            <li>What direction should the content flow — horizontal or vertical?</li>
+            <li>Do I want even spacing, alignment, or wrapping?</li>
+            <li>Which items need to grow, shrink, or stay fixed in size?</li>
+            </ul>
+            Flexbox starts with the parent container set to <code>display: flex</code>, then use <code>justify-content</code>, <code>align-items</code>, and other properties to adjust the child behavior.
+        </p>
+        
+        <h3>🪤 Common Flexbox Mistakes</h3>
+        <ul style="color: #ff9999;">
+            <li>🟥 Forgetting to add <code>display: flex</code> to the parent</li>
+            <li>🟥 Expecting <code>justify-content</code> to align things vertically</li>
+            <li>🟥 Using grid-specific properties like <code>grid-area</code> with Flexbox</li>
+            <li>🟥 Not enabling <code>flex-wrap</code> when dealing with multiple rows</li>
+        </ul>
+    </section>      
+
+    <section class="topic">
       <h2>🔤 Basic Syntax</h2>
       <pre><code>/* Flex container */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}</code></pre>
+        .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }</code></pre>
     </section>
 
     <section class="topic">
