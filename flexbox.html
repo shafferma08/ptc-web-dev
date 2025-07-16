@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flexbox Study Guide</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <h1>📦 CSS Flexbox</h1>
+    <p class="subtitle">One-dimensional layout mastery for clean, responsive designs.</p>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="../study-guides.html">← Back to Study Guides</a>
+  </nav>
+
+  <main class="content">
+    <section class="topic">
+      <h2>📘 What is Flexbox?</h2>
+      <p>Flexbox is a one-dimensional layout model that helps you align and distribute space among items in a container — either in a row or a column. It's perfect for toolbars, galleries, nav bars, and sections that flow in a single direction.</p>
+    </section>
+
+    <section class="topic">
+      <h2>✨ Why Use Flexbox?</h2>
+      <ul>
+        <li>Simplifies alignment and spacing</li>
+        <li>Perfect for nav bars, cards, horizontal/vertical centering</li>
+        <li>Responsive by design</li>
+        <li>Pairs well with CSS Grid</li>
+      </ul>
+    </section>
+
+    <section class="topic">
+      <h2>🔤 Basic Syntax</h2>
+      <pre><code>/* Flex container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}</code></pre>
+    </section>
+
+    <section class="topic">
+      <h2>📦 Flexbox Properties</h2>
+      <ul>
+        <li><strong>display: flex</strong> – activates Flexbox</li>
+        <li><strong>flex-direction</strong>: row | column</li>
+        <li><strong>justify-content</strong>: flex-start | center | space-between</li>
+        <li><strong>align-items</strong>: stretch | center | flex-end</li>
+        <li><strong>flex-wrap</strong>: wrap | nowrap</li>
+        <li><strong>gap</strong>: controls spacing between flex items</li>
+      </ul>
+    </section>
+
+    <section class="topic">
+      <h2>🎨 Live Demo: Flexbox Image Gallery</h2>
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="azbPRRp" data-pen-title="Flexbox image gallery" data-user="shafferma08" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shafferma08/pen/azbPRRp">Flexbox image gallery</a> by Marianne Shaffer (<a href="https://codepen.io/shafferma08">@shafferma08</a>) on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+
+      <h3>🧠 Challenge Prompt</h3>
+      <ul>
+        <li>🟢 Beginner: Make all images the same width and evenly spaced</li>
+        <li>🟡 Intermediate: Add responsive wrap behavior and spacing</li>
+        <li>🔴 Advanced: Add hover effects and center alignment on smaller screens</li>
+      </ul>
+    </section>
+
+    <section class="topic">
+      <h2>🎥 Learn by Doing: Flexbox Tutorial</h2>
+      <p>This video from Traversy Media gives you a super practical intro to Flexbox:</p>
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-top:1rem;margin-bottom:1rem;">
+        <iframe src="https://www.youtube.com/embed/3YW65K6LcIA" 
+                title="Flexbox Tutorial" 
+                style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" 
+                allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section class="topic">
+      <h2>🔗 Reputable Resources</h2>
+      <ul>
+        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS-Tricks Guide to Flexbox</a></li>
+        <li><a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy (Game)</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank">MDN: Flexbox Concepts</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>💪 Flex It Like You Mean It | Web Dev @ PTC</p>
+  </footer>
+
+  <script async src="https://public.codepenassets.com/embed/index.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
