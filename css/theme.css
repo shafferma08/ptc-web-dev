@@ -3,6 +3,8 @@
     --color-bg: #000;
     --color-accent: #00ff90;
     --color-shadow: #0f0;
+    --link-color: #66ccff;
+    --white: #fff;
     --font-main: 'Share Tech Mono', monospace;
   }
   
@@ -11,6 +13,16 @@
     color: var(--color-accent);
     font-family: var(--font-main);
   }
+
+    /* theme.css */
+  a {
+    color: var(--link-color);
+    text-decoration: underline;
+  }
+  a:hover {
+    color: var(--white);
+  }
+
   
   .text-shadow {
     text-shadow: 0 0 10px var(--color-accent);
